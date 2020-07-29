@@ -1,6 +1,6 @@
 # black-devil
 
-Black devil is a website where you can search for any movie.
+Black devil is a website where you can search for any movie or series.
 
 ## Getting Started
 
