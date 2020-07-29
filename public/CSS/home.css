@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+/* 
+font-family: 'Caveat', cursive;
+*/
+
+/* gerenal properties */
+body {
+  font-family: "Caveat", cursive;
+}
+::selection {
+  color: rgb(239, 241, 88);
+  background: black;
+  padding: 8px;
+}
+::placeholder {
+  color: rgba(0, 0, 0, 0.404);
+  font-family: "Caveat", cursive;
+  font-size: 18px;
+}
+input[type="text"], textarea, select { 
+  outline: none;
+}
+
+/* home page */
+#firstHalf {
+  height: 50vh;
+  background-color: black;
+}
+
+#secondHalf {
+  height: 50vh;
+  background-color: rgb(239, 241, 88);
+}
+
+header > h1 {
+  color: rgb(239, 241, 88);
+  text-align: center;
+  font-size: 44px;
+  font-family: "Caveat", cursive;
+  line-height: 50vh;
+}
+#searchInput {
+  margin-left: 41%;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 8px 60px;
+}
+#searchInput:focus {
+  border: none;
+  background-color: rgb(239, 241, 88);
+  color: black;
+  transform: translateX(60px);
+  transition: all 0.5s;
+  transform: translateY(-40px);
+  border-bottom: 1px solid black;
+  border-radius: 4px;
+  padding: 8px 68px;
+}
+#searchInput:hover {
+  border-bottom: 2px solid black;
+}
+#homeButton {
+  border: none;
+  padding: 8px 40px;
+  margin-left: 46%;
+  background-color: black;
+  border-radius: 4px;
+  color: rgb(239, 241, 88);
+  font-family: "Caveat", cursive;
+  margin-top: 10px;
+}
+footer > p {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 36vh;
+}
