@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie <%= movieKey.name %></title>
 </head>
+
 <body>
     <header>
-        
     </header>
+
     <body>
-        
+        <% movieKey.forEach(ele=>{ %>
+        <img src="<%= ele.image%>" style="height: 295px; width: 210px; background-image: url(/assests/photo.png); background-repeat: no-repeat; background-size: cover;">
+        <h1>Movie : <%= ele.name %></h1>
+        <h1>language : <%= ele.language %></h1>
+        <h1>genres : <%= ele.genres %></h1>
+        <h1>status : <%= ele.status %></h1>
+        <h1>premiered : <%= ele.premiered %></h1>
+        <a href="<%= ele.officialSite %>" target="_blank">officialSite</a>
+        <h1>rating : <%= ele.rating %></h1>
+        <p>summary : <%- ele.summary %></p>
+        <% }) %>
     </body>
     <footer>
 
     </footer>
 </body>
+
 </html>
