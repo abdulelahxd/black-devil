@@ -14,6 +14,10 @@ server.use(express.static('./public'));
 server.set('view engine', 'ejs');
 
 // routes
+server.get('/',(req,res)=>{
+    res.render('home');
+});
+
 server.get('/search',(req,res)=>{
     let url = `http://api.tvmaze.com/search/shows?q=${req.query.userKey}`;
     superagent.get(url).then(movieData=>{
@@ -27,13 +31,13 @@ server.get('/search',(req,res)=>{
 // constructor for movies
 function Movie(ele) {
     this.name = ele.show.name;
-    this.language = ele.show.language;
-    this.genres = ele.show.genres; // array 
-    this.status = ele.show.status;
-    this.premiered = ele.show.premiered;
-    this.officialSite = ele.show.officialSite;
-    this.rating = ele.show.rating;
-    this.image = ele.show.image.medium;
+    this.language = ele.show.language ? ele.show.language : "No languages available";
+    this.genres = ele.show.genres ? ele.show.genres : "No geners found";
+    this.status = ele.show.status ? ele.show.status : "Not available";
+    this.premiered = ele.show.premiered ? ele.show.premiered : "Not available";
+    this.officialSite = ele.show.officialSite ? ele.show.officialSite: "https://www.hbo.com/";
+    // this.rating = ele.show.rating.average ? ele.show.rating.average: "not found";
+    this.image = ele.show.image ? ele.show.image.medium : "not found";
     this.summary = ele.show.summary;
 }
 
