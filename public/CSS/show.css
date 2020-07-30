@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+/* 
+font-family: 'Caveat', cursive;
+*/
+
+* {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  color: rgb(212, 227, 231);
+}
+::selection {
+  color: rgb(239, 241, 88);
+  background: black;
+  padding: 8px;
+}
+header {
+  background-color: rgb(239, 241, 88);
+  height: 10vh;
+  text-align: center;
+}
+header > ul > li > a {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  line-height: 10vh;
+}
+header > ul > li > a:hover {
+  color: #262626;
+  border-bottom: 2px solid black;
+  transition: all 0.1s;
+}
+body {
+  background-color: black;
+}
+body > main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body > main > div {
+  text-align: left;
+  background-color: #0f0f0f;
+  margin: 18px 0px;
+  height: 54vh;
+  overflow: hidden;
+  max-width: 44%;
+  min-width: 44%;
+  border-radius: 4px;
+  box-shadow: #000000 0.6px 1px 8px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body > main > div > img {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: 30px;
+}
+body > main > div:hover {
+  transform: translate(0, -4px);
+  transition: all 0.5s;
+  box-shadow: #0f0f0fb7 0.6px 1px 8px 0px;
+}
+body > main > div > div {
+  max-height: 295px;
+  min-height: 295px;
+  max-width: 400px;
+  min-width: 400px;
+  margin: 32px auto;
+}
+
+body > main > div > div > p {
+  text-align: justify;
+}
