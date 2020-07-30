@@ -36,7 +36,6 @@ function Movie(ele) {
     this.status = ele.show.status ? ele.show.status : "Not available";
     this.premiered = ele.show.premiered ? ele.show.premiered : "Not available";
     this.officialSite = ele.show.officialSite ? ele.show.officialSite: "https://www.hbo.com/";
-    // this.rating = ele.show.rating.average ? ele.show.rating.average: "not found";
     this.image = ele.show.image ? ele.show.image.medium : "not found";
     this.summary = ele.show.summary;
 }
@@ -52,5 +51,5 @@ server.use((Error,req,res) =>{
 
 // listening port
 server.listen(PORT, ()=>{
-    console.log(` __--__ `);
+    console.log(` Hola ${PORT}`);
 });
