@@ -20,7 +20,9 @@ body {
 input[type="text"], textarea, select { 
   outline: none;
 }
-
+input[type="submit"] {
+  outline: none;
+}
 /* home page */
 #firstHalf {
   height: 50vh;
